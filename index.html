@@ -26,7 +26,7 @@ button{font:inherit;cursor:pointer}
   position:fixed;inset:0;z-index:10;
   display:flex;align-items:center;justify-content:center;
   flex-direction:column;text-align:center;
-  background:radial-gradient(ellipse at center,#242018 0%,#0b0b0b 65%);
+  background:radial-gradient(ellipse at center,#35080d 0%,#080808 65%);
   transition:opacity .8s,visibility .8s
 }
 .screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
@@ -43,7 +43,7 @@ button{font:inherit;cursor:pointer}
   color:var(--gold);letter-spacing:3px;font-size:11px;
   transition:.3s
 }
-.gold-btn:hover{background:var(--gold);color:#111}
+.gold-btn:hover{background:var(--gold);color:#fff;box-shadow:0 0 20px #e5091455}
 @keyframes reveal{
   from{opacity:0;transform:translateY(25px);letter-spacing:15px}
   to{opacity:1;transform:translateY(0);letter-spacing:5px}
@@ -53,9 +53,9 @@ button{font:inherit;cursor:pointer}
 .profile{background:none;border:0;color:var(--white);width:140px}
 .avatar{
   width:115px;height:115px;margin:auto auto 16px;
-  border:1px solid #554a36;border-radius:8px;
+  border:1px solid #7a1018;border-radius:8px;
   display:grid;place-items:center;font-size:39px;
-  color:var(--gold);background:linear-gradient(140deg,#29231b,#111);
+  color:var(--gold);background:linear-gradient(140deg,#26070b,#080808);
   transition:.3s
 }
 .profile:hover .avatar{border-color:var(--gold);transform:scale(1.06)}
@@ -73,8 +73,8 @@ nav a:hover{color:var(--gold)}
 .hero{
   min-height:690px;height:100vh;display:flex;align-items:center;
   padding:100px 9%;
-  background:linear-gradient(90deg,#090909 5%,rgba(9,9,9,.92) 40%,rgba(9,9,9,.25)),
-  radial-gradient(ellipse at 78% 40%,#51432d,#16130f 45%,#090909 75%);
+  background:linear-gradient(90deg,#080808 5%,rgba(8,8,8,.92) 40%,rgba(8,8,8,.25)),
+  radial-gradient(ellipse at 78% 40%,#650b14,#25070b 45%,#080808 75%);
 }
 .hero-content{max-width:670px}
 .eyebrow{font-size:11px;letter-spacing:5px;color:var(--gold)}
@@ -87,6 +87,8 @@ nav a:hover{color:var(--gold)}
 .action{
   padding:13px 23px;border:1px solid var(--gold);
   background:var(--gold);color:#111;font-weight:700;font-size:12px
+}
+.action.outline{background:transparent;color:var(--white)}
 }
 .action.outline{background:transparent;color:var(--white)}
 section{padding:85px 9%}
