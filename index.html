@@ -113,6 +113,12 @@ section h2{font:clamp(32px,5vw,49px) 'Playfair Display',serif;margin:13px 0 35px
 .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px}
 .about-grid p{color:#bdb7ae;line-height:2;font-size:14px}
 .stat-card{border-left:1px solid #675538;padding:10px 25px}
+   .about-side{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
    .about-doodle{
   width:100%;
   max-width:280px;
@@ -214,21 +220,28 @@ footer p{font-size:12px;color:var(--muted);line-height:2}
 <section id="about">
  <div class="section-label">THE STORY SO FAR</div>
  <h2>More than a job title.</h2>
- <div class="about-grid">
+
+<div class="about-grid">
   <p>I am an MBA Finance graduate with professional experience
   across customer support, quality checking and financial services.
   My journey has helped me develop a customer-first mindset,
   attention to detail, problem-solving skills and the ability to
   work with international customers. I am interested in Payments
-     <img src="assets/doodle-animation-fixed.gif"
-        alt="Anitha working on her laptop"
-        class="about-doodle">
-  <div class="stat-card">
-   <strong>4</strong><span>Professional organisations</span><br><br>
-   <strong>MBA</strong><span>Finance background</span><br><br>
-   <strong>Payments</strong><span>Career interest</span>
+  Support, Operations and Analyst opportunities where I can combine
+  my finance background with practical customer experience.</p>
+
+  <div class="about-side">
+    <img src="assets/doodle-animation-fixed.gif"
+         alt="Anitha working on her laptop"
+         class="about-doodle">
+
+    <div class="stat-card">
+      <strong>4</strong><span>Professional organisations</span><br><br>
+      <strong>MBA</strong><span>Finance background</span><br><br>
+      <strong>Payments</strong><span>Career interest</span>
+    </div>
   </div>
- </div>
+</div>
 </section>
 
 <section id="career">
